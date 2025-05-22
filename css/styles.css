@@ -428,6 +428,60 @@ img {
   flex-direction: row-reverse;
 }
 
+/* stats */
+.stats {
+  background: #000 url('../Images/images/stats-background.jpg') center center/cover no-repeat;
+  color: #fff;
+}
+
+.stats-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 2rem;
+}
+
+.stats img {
+  width: 100%;
+  max-width: 500px;
+}
+
+.stats-content {
+  max-width: 500px;
+}
+
+.stats .stats-numbers {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.stats .stats-numbers h3 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.stats .stats-numbers p {
+  font-size: 1rem;
+}
+
+.stats .stats-text {
+  font-size: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.stats .btn {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 200px;
+}
+
 /* Media Queries */
 
 @media(max-width: 1200px) {
@@ -467,18 +521,13 @@ img {
   .topics {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  .chapter-cards {
-    grid-template-columns: 1fr;
-  }
-
   
 
-  .takeaways-cards { /*Makes icons un-aligned in 1 column, still retains item centering*/
+  .takeaways-cards, .chapter-cards { /*Makes icons un-aligned in 1 column, still retains item centering*/
     grid-template-columns: 1fr;    
   }
 
-  .details-flex, .details + .details .details-flex {
+  .details-flex, .details + .details .details-flex, .stats-flex {
     flex-direction: column;
     gap: 2rem;
   }
@@ -486,7 +535,7 @@ img {
 }
 
 @media(max-width: 768px) {
-  .main-menu-items {
+  .main-menu-items, .info-left {
     display: none;
   }
 
@@ -513,10 +562,6 @@ img {
 
   .info-content p {
     font-size: 1rem;
-  }
-
-  .info-left {
-    display: none;
   }
 }
 
