@@ -682,7 +682,16 @@ img {
     flex-direction: column;
     text-align: center;
   }
-  
+
+  .social p {
+    font-size: 1.5rem;
+  }
+
+  .social i {
+    font-size: 2.8rem;
+  }
+
+   
 }
 
 @media(max-width: 576px) {
